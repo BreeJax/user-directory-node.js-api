@@ -1,0 +1,41 @@
+body {
+  font-family: fantasy;
+  font-size: 1.2em;
+  /*background-color: #666;*/
+}
+
+.users {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+}
+
+.users li {
+  border: thin solid rebeccapurple;
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em;
+  list-style: none;
+  width: 10em;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  background-color: lightblue;
+}
+
+.funemployed {
+  color: red;
+  font-weight: bold;
+}
+
+.singleInfo {
+  border-style: double;
+  border-color: rebeccapurple;
+}

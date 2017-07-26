@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/styles.css">
+    <title>User Directory</title>
+  </head>
+  <body>
+    <ul class="users">
+      {{#users}}
+      <li>
+      <img src="{{avatar}}" alt="" height="100" width="100">
+      <h3><a href="/info/{{id}}-{{username}}">{{name}}</a></h3>
+      <!-- / absolute path, . is relative path  -->
+      <!-- if there is a job -->
+      {{#job}}
+      <p>
+        {{job}}, {{company}}
+      </p>
+      {{/job}}
+      <!-- if there is no job, related to if/else -->
+      {{^job}}
+      <p class="funemployed"> Available for Hire</p>
+      {{/job}}
+      {{#skills}}
+      {{.}}
+<!-- . means get the things in the string -->
+      {{/skills}}
+      {{^skills}}
+      <p>no skills, so sad</p>
+      {{/skills}}
+      </li>
+      {{/users}}
+    </ul>
+
+  </body>
+</html>
