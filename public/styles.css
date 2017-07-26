@@ -1,6 +1,6 @@
 body {
   font-family: fantasy;
-  font-size: 1.2em;
+  font-size: 1em;
   /*background-color: #666;*/
 }
 
@@ -20,6 +20,9 @@ body {
   list-style: none;
   width: 10em;
 }
+.user dl dt {
+  width: 1em;
+}
 
 a {
   text-decoration: none;
@@ -35,11 +38,51 @@ a:hover {
   font-weight: bold;
 }
 
-div {
+.singleInfo {
   border-style: double;
   border-color: rebeccapurple;
   margin-left: 3em;
   margin-top: 4em;
   padding: 1em;
-  width: 60%;
+  width: 40em;
+  height: 26em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.test {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contact {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 20em;
+  height: 15em;
+  padding-left: 0.25em;
+  margin-left: 1em;
+  padding-bottom: 0.25em;
+}
+p {
+  margin: 0;
+}
+
+.singleInfo img {
+  background-color: lightgray;
+  border-radius: 60px;
+  width: 14em;
+  height: 15em;
+}
+h1 {
+  font-size: 3em;
+  padding-left: 0.5em;
+}
+.details {
+  width: 30em;
+  height: 10em;
+  padding-left: 3em;
 }
